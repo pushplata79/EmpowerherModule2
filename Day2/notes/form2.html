@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshop Signup</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>HTML Deep Dive Workshop</h1>
+    <nav>
+      <a href="#register">Register</a> |
+      <a href="#participants">Participants</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+    <hr>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <!-- Registration Form -->
+    <section id="register">
+      <h2>Register for the Workshop</h2>
+      <p>Please fill out the form below to join the upcoming HTML session.</p>
+
+      <form action="#" method="post">
+        <!-- Full Name -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="fullname" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Course Preference -->
+        <p><b>Course Preference:</b></p>
+        <input type="radio" id="html" name="course" value="HTML" checked>
+        <label for="html">HTML Basics</label><br>
+        <input type="radio" id="css" name="course" value="CSS">
+        <label for="css">CSS Styling</label><br>
+        <input type="radio" id="js" name="course" value="JavaScript">
+        <label for="js">JavaScript Essentials</label><br><br>
+
+        <!-- Skills -->
+        <p><b>Skills (you can select multiple):</b></p>
+        <input type="checkbox" id="design" name="skills" value="design">
+        <label for="design">Web Design</label><br>
+        <input type="checkbox" id="coding" name="skills" value="coding">
+        <label for="coding">Coding</label><br>
+        <input type="checkbox" id="communication" name="skills" value="communication">
+        <label for="communication">Communication</label><br><br>
+
+        <!-- Short Bio -->
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Write a few lines about yourself..."></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- Participants Table -->
+    <section id="participants">
+      <h2>Last 3 Participants</h2>
+      <table border="1" cellspacing="0" cellpadding="8">
+        <caption><b>Previous Batch Participants</b></caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Asha Singh</td>
+            <td>HTML Basics</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>Rahul Verma</td>
+            <td>CSS Styling</td>
+            <td>Ongoing</td>
+          </tr>
+          <tr>
+            <td>Meena Joshi</td>
+            <td>JavaScript Essentials</td>
+            <td>Completed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <hr>
+
+  <!-- Footer Section -->
+  <footer id="contact">
+    <p>Contact us at: <a href="mailto:info@masai.com">info@masai.com</a></p>
+    <p>© 2025 masai — Upskill. Learn. Succeed.</p>
+  </footer>
+
+</body>
+</html>
