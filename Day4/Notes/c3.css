@@ -1,0 +1,33 @@
+*{ /*all*/
+  background-color:antiquewhite
+  margin: 0;
+  top: 10;
+  bottom: 10;
+}
+
+.p1{
+font-weight: 900;
+  font-family: cursive;
+  color: chartreuse;
+}
+
+.p2{
+font-weight: 900;
+  font-family: cursive;
+  color:darkred
+}
+
+h1,h2,h3{
+  color: crimson;
+}
+button{
+  background-color: aquamarine;
+  border-radius: 60;
+}
+.btn{
+  background-color:aqua;
+
+}
+.btn:hover{
+  background-color: blue;
+}
