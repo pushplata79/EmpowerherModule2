@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Position and Z-Index Example</title>
+    <style>
+        /* Static Position */
+        .static-box {
+            position: static;
+            background: lightgreen;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Relative Position */
+        .relative-box {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background: lightblue;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Absolute Position */
+        .parent {
+            position: relative;
+            width: 300px;
+            height: 120px;
+            background: #eee;
+            border: 2px solid #555;
+            margin-bottom: 30px;
+        }
+        .absolute-box {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: yellow;
+            padding: 10px;
+        }
+
+        /* Fixed Position */
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: orange;
+            padding: 10px;
+        }
+
+        /* Z-index Example */
+        .box1, .box2 {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+        .box1 {
+            background: blue;
+            top: 50px;
+            left: 50px;
+            z-index: 1; /* Behind */
+        }
+        .box2 {
+            background: red;
+            top: 90px;
+            left: 90px;
+            z-index: 5; /* On top */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Position Examples</h2>
+
+    <!-- Static -->
+    <div class="static-box">
+        This is <b>static</b> (default positioning)
+    </div>
+
+    <!-- Relative -->
+    <div class="relative-box">
+        This box is <b>relative</b> (moved slightly from original place)
+    </div>
+
+    <!-- Absolute inside Parent -->
+    <div class="parent">
+        Parent Box
+        <div class="absolute-box">Absolute (inside parent)</div>
+    </div>
+
+    <!-- Z-Index Overlap -->
+    <h2>Z-Index Example (Layering)</h2>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+    <!-- Fixed -->
+    <div class="fixed-box">
+        I stay fixed at bottom-right even when scrolling.
+    </div>
+
+    <p>Scroll the page to see fixed element stay in place... Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus doloremque dolorum culpa dignissimos iusto laudantium quia officiis architecto? Nemo rerum laboriosam ab sunt ipsum tenetur omnis veniam illo nostrum! Aliquam!Lorem
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe minima, perspiciatis fugiat mollitia laudantium ex provident nihil, laborum quidem amet exercitationem, consequuntur numquam consequatur sunt laboriosam neque esse. Soluta, architecto!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro doloribus doloremque illo maiores possimus excepturi quos illum assumenda, libero ipsum rem esse odit cupiditate consequatur itaque. Impedit saepe a quas.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eum doloribus tempore praesentium pariatur dolore ut esse. Deleniti adipisci, rem voluptatibus veritatis ipsa minus suscipit dolor ea ipsum autem. Distinctio.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugit, magnam, quae rerum, nobis quibusdam harum dicta amet aliquam culpa nulla saepe ipsa quam corrupti eveniet eaque repudiandae quas! Assumenda.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis repudiandae tenetur voluptas provident commodi quibusdam laboriosam expedita nostrum tempora, magnam eveniet? Nam quos sed maiores modi neque placeat amet laboriosam?
+    </p>
+    <br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>
