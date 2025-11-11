@@ -1,1 +1,18 @@
 
+.container
+{
+  display: grid;
+  background-color: bisque;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px;
+  gap: 2em;
+  grid-auto-rows: 100px;
+}
+.box{
+  padding: 2em;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+}
