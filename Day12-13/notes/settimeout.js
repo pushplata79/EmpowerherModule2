@@ -1,0 +1,1 @@
+setTimeout(()=>window.alert("hello"),3000);
