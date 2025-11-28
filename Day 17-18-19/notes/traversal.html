@@ -1,0 +1,47 @@
+<div id="grandParent" style="padding:20px; background: lightblue;">
+  Grand Parent
+  <div id="parent" style="padding:20px; background: lightgreen; margin-top:10px;">
+    Parent
+    <div id="child" style="padding:20px; background: lightyellow; margin-top:10px;">
+      Child
+    </div>
+  </div>
+</div>
+
+<button onclick="demoTraversal()">Check DOM Traversal</button>
+<p id="output"></p>
+
+<script>
+  function demoTraversal() {
+  const child = document.getElementById("child");
+  let result = "";
+
+  // 1️⃣ parentElement (move UP)
+  result += "Parent of Child: " + child.parentElement.id + "<br>";
+
+  // 2️⃣ children (move DOWN)
+  const grandParent = document.getElementById("grandParent");
+  result += "Grand Parent children count: " + grandParent.children.length + "<br>";
+
+  // 3️⃣ firstElementChild (first direct child)
+  result += "First child of Parent: "
+            + document.getElementById("parent").firstElementChild.id + "<br>";
+
+  // 4️⃣ lastElementChild (last direct child)
+  result += "Last child of GrandParent: "
+            + grandParent.lastElementChild.id + "<br>";
+
+  // 5️⃣ nextElementSibling (move right)
+  const parent = document.getElementById("parent");
+  result += "Parent next sibling: " + (parent.nextElementSibling ? parent.nextElementSibling.id : "None") + "<br>";
+
+  // 6️⃣ previousElementSibling (move left)
+  result += "Parent previous sibling: " + (parent.previousElementSibling ? parent.previousElementSibling.id : "None") + "<br>";
+
+  // 7️⃣ closest(selector) — find nearest matching ancestor
+  result += "Closest DIV to child: " + child.closest("div").id + "<br>";
+
+  document.getElementById("output").innerHTML = result;
+}
+
+</script>

@@ -1,0 +1,19 @@
+<h2>Welcome!</h2>
+
+<button onclick="goContact()">Go to Contact Page</button>
+<button onclick="goAbout()">Go to About Page</button>
+<button onclick="goDashboard()">Go to Dashboard (No Back)</button>
+
+<script>
+  function goContact() {
+    window.location.href = "contact.html"; // normal navigation
+  }
+
+  function goAbout() {
+    window.location.assign("about.html"); // adds to history
+  }
+
+  function goDashboard() {
+    window.location.replace("dashboard.html"); // no back
+  }
+</script>

@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  background: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.inputBox{
+  display: grid;
+  grid-template-columns: 1fr 140px 120px 100px auto;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+#taskInput, #taskDate, select, #searchInput{
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#addBtn{
+  padding: 10px 15px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#addBtn:hover{ background: #1e40af; }
+
+#themeBtn{
+  padding: 8px;
+  background: #334155;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+ul li{
+  list-style: none;
+  background: #e2e8f0;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed{
+  text-decoration: line-through;
+  background: #cbd5e1;
+}
+
+.btns button{
+  margin-left: 5px;
+  cursor: pointer;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+.doneBtn{ background: #22c55e; color: white; }
+.editBtn{ background: #facc15; }
+.deleteBtn{ background: #ef4444; color: white; }
+
+/* Dark Mode */
+.dark{ background: #1e293b; color: white; }
+.dark .container{ background: #0f172a; }
+.dark ul li{ background: #334155; color: white; }
+.dark .completed{ background: #475569; }

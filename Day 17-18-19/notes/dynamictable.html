@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Data</h1>
+    <form method="post" name="sam">
+      <br>
+      Roll No. : <input type="number" name="rollno">
+      Name:<input type="text" name="name">
+      <br>
+      <br>
+      <input type="button" name="add" value="Add Data" onclick="addStudent();" class="btn btn-succes">
+      <hr>
+      <table id="tbl" border="1">
+        <thead>
+          <th>rollno</th>
+          <th>Name</th>
+       
+        </thead>
+      </table>
+    </form>
+    <script>
+      function addStudent()
+      {
+        var rollno=document.sam.rollno.value;
+        var name=document.sam.name.value;
+        var tr=document.createElement('tr')
+        var td1=tr.appendChild(document.createElement('td'));
+        var td2=tr.appendChild(document.createElement('td'));
+        td1.innerHTML=rollno
+        td2.innerHTML=name;
+       
+        document.getElementById("tbl").appendChild(tr);
+       
+       
+
+
+        
+
+      }
+    </script>
+  </div>
+  
+</body>
+</html>

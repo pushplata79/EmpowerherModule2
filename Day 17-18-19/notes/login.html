@@ -1,1 +1,25 @@
+<title>Login Page</title>
+<body>
+  <input id="username" placeholder="Enter username"><br><br>
+  <input id="password" type="password" placeholder="Enter password"><br><br>
+  <button onclick="login()">login</button>
+  <p id="msg"></p>
+<script>
+  function login(){
+    let u=document.getElementById("username").value;
+    let p=document.getElementById("password").value;
+    if(u==="" && p==="")
+      {
+        document.getElementById("msg").innerHTML="please enter valid";
+      }
+      else
+      {
+        localStorage.setItem("loggedinUser",u);
+  window.location.href="dasboard.html";
 
+      }
+ 
+    }  
+     
+</script>
+</body>
