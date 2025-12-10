@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>DOM Variable Update</title>
+</head>
+<body>
+
+  <h3>Simple DOM Example</h3>
+
+  <button onclick="updateText()">Update Text</button>
+
+  <br><br>
+
+  <label id="nameLabel">Old Text</label>
+  
+  <script>
+  
+  function updateText() {
+      // Assign value to variable
+      let text = "Hello Students!";
+
+      // Update label using DOM
+      document.getElementById("nameLabel").innerHTML = text;
+    }
+  </script>
+
+</body>
+</html>

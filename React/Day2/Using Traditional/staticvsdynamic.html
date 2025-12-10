@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <title>Manual DOM — Minimal</title>
+</head>
+<body>
+
+  <h3>Marks: <span id="marks">0</span></h3>
+
+  <input id="newMarks" type="number" placeholder="Enter marks">
+  <button id="updateBtn">Update</button>
+
+  <button id="set80Btn">Set 80</button>
+  <button id="incBtn">+</button>
+  <button id="decBtn">-</button>
+
+  <script>
+    let marks = 0;
+
+    function show() {
+      document.getElementById("marks").innerHTML = marks;
+    }
+
+    show();
+
+    document.getElementById("set80Btn").onclick = () => {
+      marks = 80;
+      show();
+    };
+
+    document.getElementById("updateBtn").onclick = () => {
+      marks = Number(document.getElementById("newMarks").value);
+      show();
+    };
+
+    document.getElementById("incBtn").onclick = () => {
+      marks++;
+      show();
+    };
+
+    document.getElementById("decBtn").onclick = () => {
+      marks--;
+      show();
+    };
+  </script>
+
+</body>
+</html>
