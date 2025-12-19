@@ -1,0 +1,61 @@
+button{
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: wheat;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:background-color 0.5 ease;
+}
+.add-button{
+  background-color: greenyellow;
+}
+.add-button:hover{
+  background-color: rgb(35, 44, 23);
+
+}
+.delete-button{
+  background-color: red;
+}
+.delete-button:hover{
+  background-color: rgb(84, 9, 9);
+}
+
+.to-do-list{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-top: 100px;
+}
+input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  color:black;
+}
+ol{
+  padding: 0;
+
+}
+
+li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+  border: 3px solid grey;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.text{
+  flex: 1;
+}
+
+.delete-button{
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+}

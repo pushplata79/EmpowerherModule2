@@ -1,0 +1,8 @@
+/* Global Styles */
+
+.btn{
+  background-color: aqua;
+  color:brown;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 50%;
+}

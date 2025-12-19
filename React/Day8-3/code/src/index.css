@@ -1,0 +1,19 @@
+
+.App{
+  font-family: sans-serif;
+  text-align: center;
+  background-color: white;
+  padding: 55px;
+  border: 10px solid black;
+  width: 30%;
+}
+
+body{
+  text-align: -webkit-center;
+  margin-top: 10%;
+}
+
+input{
+  margin:5px;
+  padding: 5px;
+}
