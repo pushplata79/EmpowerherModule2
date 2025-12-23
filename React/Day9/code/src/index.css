@@ -1,0 +1,16 @@
+nav{
+  background-color: black;
+  padding: 15px;
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li a{
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  margin-inline: 25px;
+}
